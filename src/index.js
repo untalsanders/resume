@@ -1,7 +1,8 @@
 'use strict'
 
-let customDate = new Date('December 24, 2022 00:00:00')
-let timer = setInterval(timing, 1000);
+import './style.css'
+
+let customDate = new Date('June 8, 2023 22:00:00')
 
 function timing() {
     let now = new Date().getTime()
@@ -17,3 +18,4 @@ function timing() {
     }
 }
 
+setInterval(timing, 1000)
