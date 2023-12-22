@@ -59,6 +59,14 @@
                         }
                     },
                     "defaultConfiguration": "development"
+                },
+                "deploy": {
+                    "builder": "angular-cli-ghpages:deploy",
+                    "options": {
+                        "baseHref": "https://sandersgutierrez.github.io/resume/",
+                        "name": "Sanders Gutiérrez",
+                        "email": "ing.sanders@gmail.com"
+                    }
                 }
             }
         }
