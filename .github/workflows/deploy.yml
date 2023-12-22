@@ -27,5 +27,7 @@ jobs:
           npm run build
 
       - name: Deploy to GitHub Pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          npx angular-cli-ghpages --dir=dist/resume
+          npm run ng -- deploy --dir=dist/resume
