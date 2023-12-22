@@ -1,3 +1,7 @@
 .idea/
+
 # Dependency directories
 node_modules/
+npm-debug.log
+
+.angular/
