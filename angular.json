@@ -13,7 +13,7 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:browser-esbuild",
                     "options": {
-                        "outputPath": "dist/resume",
+                        "outputPath": "dist",
                         "index": "src/index.html",
                         "main": "src/main.ts",
                         "polyfills": ["zone.js"],
@@ -60,14 +60,6 @@
                         }
                     },
                     "defaultConfiguration": "development"
-                },
-                "deploy": {
-                    "builder": "angular-cli-ghpages:deploy",
-                    "options": {
-                        "baseHref": "https://sandersgutierrez.github.io/resume/",
-                        "name": "Sanders Gutiérrez",
-                        "email": "ing.sanders@gmail.com"
-                    }
                 }
             }
         }

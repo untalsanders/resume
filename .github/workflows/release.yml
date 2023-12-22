@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages via angular-cli-ghpages
+name: Deploy to GitHub Pages via gh-pages
 
 on:
   workflow_dispatch:
@@ -13,15 +13,21 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Use Node.js 18.x
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18.x
+          node-version: 18
           cache: 'npm'
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Prepare and deploy
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Deploy with gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          npm install
-          npm run deploy
+          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          npm run build
+          npm run deploy -- -u "Sanders Gutiérrez <ing.sanders@gmail.com>"
