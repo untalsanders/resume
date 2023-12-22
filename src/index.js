@@ -2,7 +2,7 @@
 
 import './style.css'
 
-let customDate = new Date('June 8, 2023 22:00:00')
+let customDate = new Date('February 10, 2024 00:00:00')
 
 function timing() {
     let now = new Date().getTime()
@@ -10,11 +10,9 @@ function timing() {
     if (x > 0) {
         let days = Math.floor(x / (1000 * 60 * 60 * 24))
         let hours = Math.floor((x % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
-        let mins = Math.floor((x % (1000 * 60 * 60)) / (1000 * 60))
-        let secs = Math.floor((x % (1000 * 60)) / 1000)
-    
-        let time = `${days} days : ${hours} hours : ${mins} minutes : ${secs} seconds`
-        document.querySelector('.timing').innerHTML = time
+        let minutes = Math.floor((x % (1000 * 60 * 60)) / (1000 * 60))
+        let seconds = Math.floor((x % (1000 * 60)) / 1000)
+        document.querySelector('.timing').innerHTML = `${days} days : ${hours} hours : ${minutes} minutes : ${seconds} seconds`
     }
 }
 

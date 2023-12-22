@@ -13,6 +13,8 @@ module.exports = {
     },
     devServer: {
         static: path.resolve(__dirname, 'dist'),
+        port: 4500,
+        compress: true,
     },
     module: {
         rules: [
