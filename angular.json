@@ -63,7 +63,7 @@
                 "deploy": {
                     "builder": "angular-cli-ghpages:deploy",
                     "options": {
-                        "baseHref": "https://sandersgutierrez.github.io/resume/",
+                        "baseHref": "/resume",
                         "name": "Sanders Gutiérrez",
                         "email": "ing.sanders@gmail.com"
                     }
