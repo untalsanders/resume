@@ -1,14 +1,38 @@
 import { Component } from '@angular/core'
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
-import { faBookOpen } from '@fortawesome/free-solid-svg-icons'
+import {
+    faGraduationCap,
+    faPersonWalkingLuggage,
+    faUserTie,
+    faPhone,
+    faEnvelope,
+    faGlobe,
+    faLocationDot,
+    faLanguage,
+    faLink,
+} from '@fortawesome/free-solid-svg-icons'
+import { faLinkedinIn, faTwitter, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { NgOptimizedImage } from '@angular/common'
 
 @Component({
-    selector: '#root',
+    selector: 'app-root',
     standalone: true,
-    imports: [FontAwesomeModule],
+    imports: [FontAwesomeModule, NgOptimizedImage],
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
 })
 export class AppComponent {
-    faBookOpen = faBookOpen
+    faGraduationCap = faGraduationCap
+    faPersonWalkingLuggage = faPersonWalkingLuggage
+    faUserTie = faUserTie
+    faPhone = faPhone
+    faEnvelope = faEnvelope
+    faGlobe = faGlobe
+    faLocationDot = faLocationDot
+    faLinkedinIn = faLinkedinIn
+    faTwitter = faTwitter
+    faInstagram = faInstagram
+    faYoutube = faYoutube
+    faLanguage = faLanguage
+    faLink = faLink
 }
