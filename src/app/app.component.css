@@ -1,7 +1,7 @@
 .main {
     display: grid;
     grid-template-columns: minmax(min-content, 25vw) minmax(min-content, 1fr);
-    gap: clamp(2rem, 3rem, 5vw);
+    /*gap: clamp(2rem, 3rem, 5vw);*/
 }
 
 .left_side {
@@ -72,7 +72,7 @@
     display: flex;
     flex-direction: column;
     gap: 3em;
-    padding: 3em 2em;
+    padding: 3em 4em;
 }
 
 .right_side .section-rs {
@@ -109,8 +109,24 @@
 
 .experience-info .experience-list .experience-item header span:first-child {
     color: #E98C37;
+    font-weight: 600;
 }
 
-.experience-info .experience-list .experience-item header span:last-child {
-    font-weight: 300;
+.experience-item header span:last-child {
+    font-weight: 100;
+}
+
+.education-item header span:first-child {
+    color: #E98C37;
+    font-weight: 600;
+}
+
+.education-item header span:last-child {
+    font-weight: 100;
+}
+
+.skill-info .skill {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
 }
