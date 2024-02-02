@@ -67,3 +67,50 @@
     display: flex;
     flex-direction: row;
 }
+
+.right_side {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    padding: 3em 2em;
+}
+
+.right_side .section-rs {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+}
+
+.right_side .section-rs > header {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    border-bottom: 1px solid #D6D2D2;
+}
+
+.right_side .section-rs > header :first-child {
+    font-size: 2em;
+}
+
+.right_side .section-rs > header h2 {
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.experience-info .experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.experience-info .experience-list .experience-item header {
+    padding-bottom: .5em;
+}
+
+.experience-info .experience-list .experience-item header span:first-child {
+    color: #E98C37;
+}
+
+.experience-info .experience-list .experience-item header span:last-child {
+    font-weight: 300;
+}

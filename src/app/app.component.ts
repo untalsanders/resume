@@ -1,6 +1,7 @@
 import { Component } from '@angular/core'
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 import {
+    faBriefcase,
     faGraduationCap,
     faPersonWalkingLuggage,
     faUserTie,
@@ -10,6 +11,7 @@ import {
     faLocationDot,
     faLanguage,
     faLink,
+    faCheck,
 } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedinIn, faTwitter, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { NgOptimizedImage } from '@angular/common'
@@ -35,4 +37,6 @@ export class AppComponent {
     faYoutube = faYoutube
     faLanguage = faLanguage
     faLink = faLink
+    faCheck = faCheck
+    faBriefcase = faBriefcase
 }
