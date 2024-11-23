@@ -2,18 +2,17 @@ import { Component } from '@angular/core'
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 import {
     faBriefcase,
-    faGraduationCap,
-    faPersonWalkingLuggage,
-    faUserTie,
-    faPhone,
+    faCheck,
     faEnvelope,
     faGlobe,
-    faLocationDot,
+    faGraduationCap,
     faLanguage,
     faLink,
-    faCheck,
+    faLocationDot,
+    faPhone,
+    faUserTie,
 } from '@fortawesome/free-solid-svg-icons'
-import { faLinkedinIn, faTwitter, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { faInstagram, faLinkedinIn, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { NgOptimizedImage } from '@angular/common'
 
 @Component({
@@ -25,7 +24,6 @@ import { NgOptimizedImage } from '@angular/common'
 })
 export class AppComponent {
     faGraduationCap = faGraduationCap
-    faPersonWalkingLuggage = faPersonWalkingLuggage
     faUserTie = faUserTie
     faPhone = faPhone
     faEnvelope = faEnvelope
