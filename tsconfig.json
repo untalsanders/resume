@@ -2,7 +2,8 @@
     "compilerOptions": {
         "strict": true,
         "sourceMap": true,
-        "target": "ES2022",
-        "moduleResolution": "node"
+        "target": "ESNext",
+        "moduleResolution": "node",
+        "module": "ESNext"
     }
 }
